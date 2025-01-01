@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+   
+}
+.navbar>ul{
+  list-style: none;
+  display: flex;
+ }
+ .navbar>ul>li{
+    margin: 10px;
+   }
+.navbar>a>img{
+    width: 50px;;
+    /* object-fit: cover; */
+}
+.RList{
+border: 1px solid black;
+
+}
+.res_name{
+    list-style: none;
+    border: 1px solid black;
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    padding: 15px;
+}
+.Body{
+    display: flex;
+    flex-wrap: wrap;
+ 
+}
+.cardimg{
+    height: 150px;
+    width: 100%;
+}
+.searchbar{
+    margin: 10px;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+.Restaurant_picture>img{
+    margin-bottom: 20px;
+}
+.link {
+    text-decoration: none; 
+    color: black; 
+  }
