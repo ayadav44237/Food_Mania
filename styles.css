@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
 }
@@ -19,7 +19,7 @@
    }
 .navbar>a>img{
     width: 50px;;
-    /* object-fit: cover; */
+    /* object-fit: cover; 
 }
 .RList{
 border: 1px solid black;
@@ -60,4 +60,8 @@ li{
 .link {
     text-decoration: none; 
     color: black; 
-  }
+  } */
+
+  @tailwind base;
+@tailwind components;
+@tailwind utilities;

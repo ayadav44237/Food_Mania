@@ -12,10 +12,12 @@ const RestaurantCard = ({
 
   return (
     <>
-      <ul className="res_name">
+       
+      <ul className="w-40 h-72 border-2 m-4  border-grey-500 flex">
+        <div className="w-full">
         <li className="Restaurant_picture">
           <img
-            className="cardimg"
+            className="h-40 w-full"
             src={cardImgUrl + cloudinaryImageId}
             alt="No image found"
           />
@@ -25,8 +27,9 @@ const RestaurantCard = ({
           <li><h5>{avgRating + " star"}</h5></li>
           <li><h5>{locality}</h5></li>
         </div>
-       
+        </div>
       </ul>
+     
     </>
   );
 };

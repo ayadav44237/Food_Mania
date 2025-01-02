@@ -41,8 +41,9 @@ const Body = () => {
 
   return (allResList.length==0)?<Shimeer/> :(
     <>
-      <div className="searchbar">
+      <div className="my-5 p-5 bg-pink-50">
         <input
+        className="bg-green-200 rounded-sm p-1"
           type="search"
           placeholder="search here"
         
@@ -51,7 +52,7 @@ const Body = () => {
             setSearchInput(e.target.value);
           }}
         />
-        <button onClick={() => {
+        <button className="bg-cyan-600 rounded-md p-1" onClick={() => {
            const data=filterData(searchInput,allResList);
            setFilterResList(data);
 
@@ -60,7 +61,7 @@ const Body = () => {
 
       
 
-      <div className="Body">
+      <div className="flex flex-wrap">
           
          
           { filterResList.length===0?(<h1>No Restaurant Found, Search Again</h1>):filterResList.map((restaurant) => {
