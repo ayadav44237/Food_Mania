@@ -1,14 +1,19 @@
+import { useContext } from "react";
 import { cardImgUrl } from "./confiig";
+import UseContextMbd from "./Utils/UseContextMbd";
+
 const RestaurantCard = ({
   cloudinaryImageId,
   name,
   avgRating,
   locality,
+  Name,
   cuisines,
 }) => {
   // const {cloudinaryImageId,name,avgRating,locality}=restaurant.info
 
   // console.log(restaurant);
+  const {user}=useContext(UseContextMbd);
 
   return (
     <>
@@ -26,6 +31,8 @@ const RestaurantCard = ({
           <li><h4>{name}</h4></li>
           <li><h5>{avgRating + " star"}</h5></li>
           <li><h5>{locality}</h5></li>
+          <li>{user.place}</li>
+      
         </div>
         </div>
       </ul>

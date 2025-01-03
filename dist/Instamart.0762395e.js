@@ -627,36 +627,121 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
+const Section = ({ title, description, isVisible, setIsVisible })=>{
+    // const [isVisible,setIsVisible]=useState(false);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "border-2 border-black p-2 m-2",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    className: "text-2xl font-bold",
+                    children: title
+                }, void 0, false, {
+                    fileName: "src/components/Instamart.js",
+                    lineNumber: 8,
+                    columnNumber: 9
+                }, undefined),
+                !isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "bg-pink-500 m-1 p-1 rounded-lg w-16",
+                    onClick: ()=>setIsVisible(true),
+                    children: "show"
+                }, void 0, false, {
+                    fileName: "src/components/Instamart.js",
+                    lineNumber: 10,
+                    columnNumber: 11
+                }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "bg-pink-500 m-1 p-1 w-16 rounded-lg",
+                    onClick: ()=>setIsVisible(false),
+                    children: "Hide"
+                }, void 0, false, {
+                    fileName: "src/components/Instamart.js",
+                    lineNumber: 17,
+                    columnNumber: 11
+                }, undefined),
+                isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: description
+                }, void 0, false, {
+                    fileName: "src/components/Instamart.js",
+                    lineNumber: 25,
+                    columnNumber: 23
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Instamart.js",
+            lineNumber: 7,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false);
+};
+_c = Section;
 const Instamart = ()=>{
+    _s();
+    // const [instaCongig, setInstaConfig] = useState({
+    //   about: false,
+    //   team: false,
+    //   career: false,
+    //   contact: false,
+    // });
+    const [visibleSection, setIsVisibleSection] = (0, _react.useState)("team");
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: " This is Instamart"
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                title: "About Instamart",
+                description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+                isVisible: visibleSection === "about",
+                setIsVisible: ()=>setIsVisibleSection("about")
             }, void 0, false, {
                 fileName: "src/components/Instamart.js",
-                lineNumber: 4,
+                lineNumber: 40,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
-                children: "100 of component"
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                title: "Team Instamart",
+                description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+                isVisible: visibleSection === "team",
+                setIsVisible: ()=>setIsVisibleSection("team")
             }, void 0, false, {
                 fileName: "src/components/Instamart.js",
-                lineNumber: 5,
+                lineNumber: 48,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                title: "Career Instamart",
+                description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+                isVisible: visibleSection === "career",
+                setIsVisible: ()=>setIsVisibleSection("career")
+            }, void 0, false, {
+                fileName: "src/components/Instamart.js",
+                lineNumber: 56,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                title: "ContactUs Instamart",
+                description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+                isVisible: visibleSection === "contact",
+                setIsVisible: ()=>setIsVisibleSection("contact")
+            }, void 0, false, {
+                fileName: "src/components/Instamart.js",
+                lineNumber: 64,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true);
 };
-_c = Instamart;
+_s(Instamart, "PVQcHi8R2wjRGT484uwGiGuysck=");
+_c1 = Instamart;
 exports.default = Instamart;
-var _c;
-$RefreshReg$(_c, "Instamart");
+var _c, _c1;
+$RefreshReg$(_c, "Section");
+$RefreshReg$(_c1, "Instamart");
 
   $parcel$ReactRefreshHelpers$8238.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["aQL8O","aXhZZ"], null, "parcelRequire94c2")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}]},["aQL8O","aXhZZ"], null, "parcelRequire94c2")
 
 //# sourceMappingURL=Instamart.0762395e.js.map

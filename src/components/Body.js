@@ -16,6 +16,8 @@ const Body = () => {
   const [searchInput, setSearchInput] = useState("");
   const [allResList,setallResList]=useState([]); 
   const [filterResList,setFilterResList]=useState([]);
+  
+
 
 
   async function fetchDetails(){
@@ -68,7 +70,7 @@ const Body = () => {
           return (
             <Link className="link" to={"/restaurant/"+restaurant.info.id}
             key={restaurant.info.id}>
-            <RestaurantCard {...restaurant.info}  />
+            <RestaurantCard {...restaurant.info}   />
             </Link>
           );
             })}

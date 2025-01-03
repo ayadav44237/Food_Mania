@@ -1,7 +1,10 @@
-import { useState } from "react";
+import { useState,useContext } from "react";
 import { Link } from "react-router-dom";
+import UseContextMbd from "./Utils/UseContextMbd";
+
 const Navbar = () => {
   const[isLoggedIn, setIsLoggedIn]=useState(true);
+  const{user}=useContext(UseContextMbd)
     return (
       
       <div className="flex  bg-pink-50 justify-between shadow-xl">
@@ -20,7 +23,7 @@ const Navbar = () => {
 
           <li className="p-2 m-2">cart</li>
         </ul>
-        
+        <p>{user.name}</p>
        {isLoggedIn?(<button onClick={()=>{
           setIsLoggedIn(false);
        }}>Login</button>):(<button onClick={()=>{
